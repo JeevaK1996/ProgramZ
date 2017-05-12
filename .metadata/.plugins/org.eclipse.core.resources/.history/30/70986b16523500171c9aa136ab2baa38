@@ -1,0 +1,21 @@
+package ex2;
+
+import java.util.Scanner;
+
+public class CarPool {
+public static void main(String[] args) {
+	Scanner scanner=new Scanner(System.in);
+	float totalMilesPerDay=scanner.nextFloat();
+	float costPerGallon=scanner.nextFloat();
+	float avgMilePerGallon=scanner.nextFloat();
+	float parkingFees=scanner.nextFloat();
+	float tollsPerDay=scanner.nextFloat();
+	float travelAmount=totalMilesPerDay*costPerGallon;
+	float gallonPerDay=totalMilesPerDay/avgMilePerGallon;
+	float payAmountPerDay=tollsPerDay+parkingFees;
+	System.out.println("Amount for Per Day"+payAmountPerDay);
+	System.out.println("peronth"+payAmountPerDay*30);
+	System.out.println("Gallon Per Day"+gallonPerDay);
+	System.out.println("perMonth"+gallonPerDay*30);
+}
+}

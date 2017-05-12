@@ -1,0 +1,13 @@
+package set;
+
+import java.util.Set;
+import java.util.TreeSet;
+
+public class Example {
+public static void main(String[] args) {
+	Set s=new TreeSet();
+	s.add("c");
+	s.add("z");
+	s.add("a");
+}
+}

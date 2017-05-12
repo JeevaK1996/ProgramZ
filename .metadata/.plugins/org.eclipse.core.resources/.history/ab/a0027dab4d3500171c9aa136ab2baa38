@@ -1,0 +1,18 @@
+package ex2;
+
+import java.util.Scanner;
+
+public class WorldPopulation {
+public static void main(String[] args) {
+	Scanner scanner=new Scanner(System.in);
+	int previous=scanner.nextInt();
+	int current=scanner.nextInt();
+	int avg=current-previous;
+	System.out.println("next three years");
+	int a1=current+avg;
+	int b1=a1+avg;
+	int c1=b1+avg;
+	
+	System.out.println(a1+"\t"+b1+"\t"+c1);
+}
+}

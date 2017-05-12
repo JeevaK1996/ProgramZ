@@ -1,0 +1,19 @@
+package ex3;
+
+public class Cons {
+	public Cons() 
+
+{
+System.out.println("no args cons");		
+}
+	public Cons(int a){
+		System.out.println("one args cons");
+	}
+	public Cons(int a, String b){
+		this();
+		System.out.println("two args cons");
+	}
+	public static void main(String[] args) {
+		Cons cons=new Cons(3, "hi");
+	}
+}

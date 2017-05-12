@@ -1,0 +1,69 @@
+   import java.util.Scanner;
+   public class FindDistinctElements{
+        public static void main(String[] args) {
+  
+                Scanner in=new Scanner(System.in);
+                System.out.println("Enter how many No. will be present in first Array");
+                int n1=in.nextInt();
+                int a[]=new int[n1];
+                System.out.println("Enter the first Array Elements");
+                for(int i=0; i<=a.length; i++)
+                {
+                      int n=in.nextInt();
+                      a[i]=n;
+                }
+  
+                System.out.println("Enter how many No. will be present in second Array");
+                int n2=in.nextInt();
+                int b[]=new int[n2];
+                System.out.println("Enter first Array Elements");
+                for(int i=0; i<=n2-1; i++)
+                {
+                      int n=in.nextInt();
+                      b[i]=n;
+                }
+  
+                for(int i=0; i<=n1-1; i++)
+                {
+                      int count=0;
+                      for(int j=0; j<=n2-1; j++)
+                      {
+                           count=0;
+                           if(a[i]==b[j])
+                           {
+                                count=0;
+                                break;
+                           }
+                           else
+                           {
+                                count=1;
+                           }
+                      }
+                      if(count==1)
+                      {
+                              System.out.print(a[i]+" ");
+                      }
+                }
+                for(int i=0; i<=n2-1; i++)
+                {
+                      int count=0;
+                      for(int j=0; j<=n1-1; j++)
+                      {
+                            count=0;
+                            if(b[i]==a[j])
+                            {
+                                 count=0;
+                                 break;
+                            }
+                            else
+                            {
+                                 count=1;
+                            }
+                      }
+                      if(count==1)
+                      {
+                              System.out.print(b[i]+" ");
+                      }
+                }
+         }
+   }

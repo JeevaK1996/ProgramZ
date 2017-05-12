@@ -1,0 +1,27 @@
+package vid;
+
+public class Taxi extends Car{
+public Taxi() {
+	System.out.println("no args taxi");
+	}
+public Taxi(int a){
+	super(a);
+	System.out.println(a);
+}
+public static void met(){
+	System.out.println("this is static mathod");
+}
+static int abc=456;
+public static void main(String[] args) {
+
+Taxi.abc++;
+System.out.println(abc);
+Taxi.met();
+@SuppressWarnings("unused")
+Taxi taxi=new Taxi(5);
+}
+
+static{
+	System.out.println("this is example of inheritance");
+}
+}

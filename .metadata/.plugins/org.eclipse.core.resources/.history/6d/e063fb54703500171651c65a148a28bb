@@ -1,0 +1,9 @@
+package vid;
+
+public class Taxi extends Car{
+public Taxi() {
+	System.out.println("no args taxi");}
+public static void main(String[] args) {
+	Taxi taxi=new Taxi();
+}
+}

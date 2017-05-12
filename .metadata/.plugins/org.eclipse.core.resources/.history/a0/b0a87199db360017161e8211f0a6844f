@@ -1,0 +1,15 @@
+package inheritance;
+class Super{
+	public void display(){
+		System.out.println("Display method of super class");
+	}
+}
+public class Override extends Super{
+	public void diplay(){
+		System.out.println("Display of Subclass");
+	}
+	public static void main(String[] args) {
+		Override  override=new Override();
+		override.diplay();
+	}
+}

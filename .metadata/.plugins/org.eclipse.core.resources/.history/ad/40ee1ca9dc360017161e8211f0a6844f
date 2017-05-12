@@ -1,0 +1,13 @@
+package inheritance;
+class Sup{
+	int age;
+	public Sup(int age) {
+this.age=age;
+	}
+	public void getAge(){
+		System.out.println("Age from super class const:"+age);
+	}
+}
+public class Const {
+
+}

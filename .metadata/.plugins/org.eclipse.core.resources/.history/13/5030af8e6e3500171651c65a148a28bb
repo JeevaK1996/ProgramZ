@@ -1,0 +1,6 @@
+package vid;
+
+public class Taxi{
+public Taxi() {
+	System.out.println("no args taxi");}
+}

@@ -1,0 +1,7 @@
+package vid;
+
+public class Car {
+public Car() {
+	System.out.println("no args car");
+}
+}

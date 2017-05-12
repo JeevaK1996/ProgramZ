@@ -1,0 +1,15 @@
+package ex2;
+
+import java.util.Scanner;
+
+public class CarPool {
+public static void main(String[] args) {
+	Scanner scanner=new Scanner(System.in);
+	float totalMilesPerDay=scanner.nextFloat();
+	float costPerGallon=scanner.nextFloat();
+	float avgMilePerGallon=scanner.nextFloat();
+	float parkingFees=scanner.nextFloat();
+	float tollsPerDay=scanner.nextFloat();
+	
+}
+}
